@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI 2D Floor Plan Plotter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.28.0",
+    "d3": "https://aistudiocdn.com/d3@^7.9.0"
+  }
+}
+</script>
+<style>
+  .resize-handle {
+    fill: #22d3ee; /* cyan-400 */
+    stroke: #f0f9ff; /* sky-50 */
+    stroke-width: 0.5px;
+    opacity: 0.8;
+    transition: opacity 150ms;
+  }
+  .resize-handle:hover {
+    opacity: 1;
+  }
+  .snap-guide {
+    stroke: #fb7185; /* rose-500 */
+    stroke-width: 0.5px;
+    stroke-dasharray: 3, 3;
+    pointer-events: none;
+  }
+  .room-palette-item {
+    cursor: grab;
+  }
+  .room-palette-item:active {
+    cursor: grabbing;
+  }
+</style>
+</head>
+  <body class="bg-gray-900 text-gray-100">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

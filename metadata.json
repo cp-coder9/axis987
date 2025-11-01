@@ -1,0 +1,5 @@
+{
+  "name": "AI 2D Floor Plan Plotter",
+  "description": "An application that uses AI to understand a textual description of a floor plan and visualizes it as a 2D plot using D3.js. Describe rooms, their sizes, and relative positions, and see them plotted on screen.",
+  "requestFramePermissions": []
+}
